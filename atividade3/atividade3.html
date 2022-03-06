@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8"/>
+            <link rel="stylesheet" href="style.css"/>
+            <title>Atividade 3</title>
+        </head>
+        <body>
+            <div class="formulario">
+                <form action="pagina/Formulario.html" method="get">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <div class="input">
+                            <input type="text" name="nome" id="nome" autofocus maxlength="100" class="texto" required/>
+                            <label for="nome" class="labil">Nome Completo*</label>
+                        </div>
+
+                        <div class="input">
+                            <input type="text" name="email" id="email" class="texto" required/>
+                            <label for="email" class="labil">Email*</label>
+                        </div>
+
+                        <div class="input">
+                            <input type="number" name="celular" id="celular" class="texto" maxlength="12" required/>
+                            <label for="celular" class="labil">Celular*</label>
+                        </div>
+
+                        <div class="input">
+                            <textarea name="endereco" id="endereco" class="texto" required></textarea>
+                            <label for="endereco" class="labil">Endereço*</label>
+                        </div>
+
+                        <div class="input">
+                            <input type="text" name="cep" id="cep" maxlength="8" class="texto" required/>
+                            <label for="cep" class="labil">Cep*</label> 
+                        </div>
+
+                        <div class="input">
+                            <label for="data">Data de Nascimento*</label>
+                            <input type="date" name="data" id="data" max="2004-12-31" class="selecoes" required/>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                    <legend>Dados Escolares</legend>
+                        <div class="campo">
+                            <div class="input">
+                                <input type="text" name="curso" id="curso" class="texto" required/>
+                                <label for="curso" class="labil">Nome do Curso 1*</label>
+                            </div>
+
+                            <div>
+                                <label for="horas">Horas*</label>
+                                <input type="time" name="horas" id="horas" class="selecoes" required/>
+                            </div>
+
+                            <div>
+                                <label for="conclusao">Mês/Ano de Conclusão</label>
+                                <input type="month" name="conclusao" id="conclusao" min="2015-01" class="selecoes" required/>
+                            </div>
+                        </div>
+                        
+                        <div class="campo">
+                            <div class="input">
+                                <input type="text" name="curso2" id="curso2" class="texto" required/>
+                                <label for="curso2" class="labil">Nome do Curso 2*</label>
+                            </div>
+
+                            <div class="input">
+                                <label for="horas">Horas*</label>
+                                <input type="time" name="horas" id="horas2" class="selecoes" required/>
+                            </div>
+
+                            <div class="input">
+                                <label for="conclusao">Mês/Ano de Conclusão</label>
+                                <input type="month" name="conclusao" id="conclusao2" min="2015-01" class="selecoes" required/>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="input">
+                                <input type="text" name="curso3" id="curso3" class="texto" required/>
+                                <label for="curso3" class="labil">Nome do Curso 3*</label>
+                            </div>
+
+                            <div class="input">
+                                <label for="horas">Horas*</label>
+                                <input type="time" name="horas" id="horas3" class="selecoes" required/>
+                            </div>
+
+                            <div>
+                                <label for="conclusao">Mês/Ano de Conclusão</label>
+                                <input type="month" name="conclusao" id="conclusao3" min="2015-01" class="selecoes" required/>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Dados Profissionais</legend>
+                        <div class="input">
+                            <div>
+                                <input type="text" nome="empresa" id="empresa" class="texto" required/>
+                                <label for="empresa" class="labil">Nome da Empresa 1*</label>
+                            </div>
+
+                            <div class="input">
+                                
+                                <label>Atual?*
+                                    <select name="atual" id="atual" class="selecoes">
+                                        <option value="nao" >Não</option>
+                                        <option value="sim" selected>Sim</option>
+                                    </select>
+                                </label>
+                            </div>
+
+                            <div class="input">
+                                <label for="tempo">Tempo de Trabalho*</label>
+                                <input type="time" name="tempo" id="tempo" class="selecoes" required/>
+                            </div>
+
+                            <div class="input">
+                                <input type="text" name="cargo" id="cargo" class="texto" required/>
+                                <label for="cargo" class="labil">Cargo*</label> 
+                            </div>
+
+                            <div class="input">
+                                <textarea name="descricao" id="descricao" class="texto" required></textarea>
+                                <label for="descricao" class="labil">descrição das Atividades*</label>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <div class="input">
+                                <input type="text" nome="empresa" id="empresa" class="texto" required/>
+                                <label for="empresa" class="labil">Nome da Empresa 2*</label>
+                            </div>
+
+                            <div class="input">
+                                <label class="selecoes">Atual?*
+                                    <select name="atual" id="atual2" class="selecoes">
+                                        <option value="nao">Não</option>
+                                        <option value="sim" selected>Sim</option>
+                                    </select>
+                                </label>
+                            </div>
+
+                            <div class="input">
+                                <label for="tempo">Tempo de Trabalho*</label>
+                                <input type="time" name="tempo" id="tempo2" class="selecoes" required/>
+                            </div>
+                            
+                            <div class="input">
+                                <input type="text" name="cargo" id="cargo2" class="texto" required/>
+                                <label for="cargo" class="labil">Cargo*</label>
+                            </div>
+
+                            <div class="input">
+                                <textarea name="descricao" id="descricao2" class="texto" required></textarea>
+                                <label for="descricao" class="labil">descrição das Atividades*</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="input">
+                                <input type="text" nome="empresa" id="empresa" class="texto" required/>
+                                <label for="empresa" class="labil">Nome da Empresa 3*</label>
+                            </div>
+
+                            <div class="input">
+                                <label>Atual?*
+                                    <select name="atual" id="atual3" class="selecoes" required>
+                                        <option value="nao">Não</option>
+                                        <option value="sim" selected>Sim</option>
+                                    </select>
+                                </label>
+                            </div>
+
+                            <div class="input">
+                                <input type="time" name="tempo" id="tempo3" class="selecoes" required/>
+                                <label for="tempo">Tempo de Trabalho*</label>
+                            </div>
+
+                            <div class="input">
+                                <input type="text" name="cargo" id="cargo3" class="texto" required/>
+                                <label for="cargo" class="labil">Cargo*</label>
+                            </div>
+
+                            <div class="input">
+                                <textarea name="descricao" id="descricao3" class="texto" required></textarea>
+                                <label for="descricao" class="labil">descrição das Atividades*</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <label for="check">
+                            <input type="checkbox" id="check" />
+                            Eu declaro que li e aceito todos os termos e<a href="https://www.google.com.br"> condições de uso.</a></label>
+                    </div>
+
+                    <div class="botao">
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </body>
+    </html>

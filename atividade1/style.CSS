@@ -1,0 +1,21 @@
+.titulo
+{
+    font-weight: bold;
+}
+h
+{
+    font-size: 19px;
+}
+a
+{
+    text-decoration: underline;
+}
+b
+{
+    color:green;
+}
+c
+{
+    color:red;
+    font-weight: bold;
+}

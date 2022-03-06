@@ -1,0 +1,157 @@
+body
+{
+    background-color: #4B0082;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+legend
+{
+    text-align: center;
+    padding: 5px;
+    border-style: groove;
+    border-color: rgba(0, 0, 0, 1);
+    background-color:#00008b;
+    border-radius: 8px;
+}
+
+legend:hover
+{
+    color: #ffd700;
+    cursor: default;
+}
+
+label
+{
+    display: block;
+    margin: 3px;
+}
+
+.labil
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input
+{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.formulario
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+fieldset
+{
+    border-style: groove;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    border-style: groove;
+    border-color: rgba(0, 0, 0, 1);
+    padding: 25px;
+    border-width: 5px;
+}
+
+.campo
+{
+    margin-bottom: 20px;
+}
+
+.texto
+{
+    width: 99%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    letter-spacing: 2px;
+}
+
+.selecoes
+{
+    background: none;
+    color: #ffff;
+}
+
+.nome
+{
+    color: #ffff;
+}
+
+legend, label, input, textarea
+{
+    color: #ffff;
+}
+
+.texto:focus ~ .labil,
+.texto:valid ~ .labil
+{
+    top: -15px;
+    font-size: 10px;
+    color:#ffd700;
+}
+
+a{
+    color: #ffff;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+button
+{
+    color: #ffff;
+    background-color: #00008b;
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    border-style: outset;
+    border-radius: 8px;
+}
+
+button:hover
+{
+    color: #ffd700;
+    /*
+    font-size: 14px;
+    width: 140px;
+    border-style: inset;
+    cursor: pointer;
+    */
+}
+
+button:focus
+{
+    font-size: 14px;
+    width: 140px;
+    border-style: inset;
+    cursor: pointer;
+}
+
+.botao
+{
+    margin-top: 15px;
+    text-align: center;
+}
+select
+{
+    color: #ffff
+}
+option
+{
+    background: none;
+    background-color: #00008b;
+}
