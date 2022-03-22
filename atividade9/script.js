@@ -140,7 +140,6 @@ function clear5(){
 
 //desafio
 let janKen = "";
-let Po = "";
 function pedra(){
     //mao("✊🏽");
     desafioSorteio();
@@ -166,7 +165,6 @@ function desafioSorteio(){
     //alert(random(1, 4));
     switch (jogada){
         case 1:
-            Po = "pedra"
             mao("✊🏽");
             if(janKen == "papel"){
                 document.getElementById("desafioResultado").innerHTML = "Vitória";
@@ -177,7 +175,6 @@ function desafioSorteio(){
             }
             break;
         case 2:
-            Po = "papel"
             mao("🖐🏽");
             if(janKen == "tesoura"){
                 document.getElementById("desafioResultado").innerHTML = "Vitória";
@@ -188,7 +185,6 @@ function desafioSorteio(){
             }
             break;
         case 3:
-            Po = "tesoura"
             mao("✌🏽");
             if(janKen == "pedra"){
                 document.getElementById("desafioResultado").innerHTML = "Vitória";
