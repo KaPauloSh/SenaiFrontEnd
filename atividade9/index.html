@@ -41,12 +41,12 @@
                     Lista armazenada
                     <a href="detalhes.html" target="_blank">detalhar</a></span>
             </h1>
-            <p id="">Resultado: A lista de itens é [xxxx,xxxx,xxxx,xxxxx]</p>
+            <p id="">Resultado: A lista de itens é [<span id="tabResp3">xxxx,xxxx,xxxx,xxxxx</span>]</p>
             <label for="">Item:</label>
-            <input type="text" id="" />
-            <input type="button" value="Add" />
-            <input type="button" value="Show" />
-            <input type="button" value="Clear" />
+            <input type="text" id="quest3" />
+            <input type="button" onclick="addList()" value="Add" />
+            <input type="button" onclick="showList()" value="Show" />
+            <input type="button" onclick="clearList()" value="Clear" />
         </div>
         <div class="questao">
             <h1>
@@ -63,19 +63,19 @@
                     <a href="detalhes.html" target="_blank">detalhar</a></span>
             </h1>
             <p id="">
-                Resultado: <br />Lista de homens [xxxx,xxxx,xxxx,xxxxx] <br />Lista de
-                mulheres [xxxx,xxxx,xxxx,xxxxx]
+                Resultado: <br />Lista de homens [<span id="homem5">xxxx,xxxx,xxxx</span>] <br />Lista de
+                mulheres [<span id="mulher5">xxxx,xxxx,xxxx</span>]
             </p>
             <label for="">Nome:</label>
-            <input type="text" id="" />
+            <input type="text" id="name" />
             <label for="">Sexo:</label>
-            <select name="sexo" id="">
+            <select name="sexo" id="genre">
                 <option value="M">Masculino</option>
                 <option value="F">Feminino</option>
             </select>
-            <input type="button" value="Add" />
-            <input type="button" value="Show" />
-            <input type="button" value="Clear" />
+            <input type="button" onclick="add5()" value="Add" />
+            <input type="button" onclick="show5()" value="Show" />
+            <input type="button" onclick="clear5()" value="Clear" />
         </div>
         <div class="questao">
             <h1>
@@ -92,71 +92,7 @@
             #
             <span class="adversario">👋🏽</span>
 
-            <script>
-                function quest2Calc(q2valor1, q2valor2){
-                    var num1 = document.getElementById("q2valor1").value;
-                    var num2 = document.getElementById("q2valor2").value;
-
-                    let text = "";
-                    let i = num1;
-                    while(i < num2){
-                        text += i + ","; 
-                        i++    
-                    }
-
-                    var nam = String(num2)
-                    var sim = text + nam;
-                    return sim;
-                    
-                }
-                function quest2(){
-                    var num1 = document.getElementById("q2valor1").value;
-                    var num2 = document.getElementById("q2valor2").value;
-                    resp2 = document.getElementById('tabResp2').innerHTML = `Resultado: Os número entre ${num1} e ${num2} são(${quest2Calc()})`;
-                }
-                function loteria(){
-                    document.getElementById("megaSena").innerHTML = 
-                    `Resultado: ${sortear(0,60)},${sortear(0,60)},${sortear(0,60)},${sortear(0,60)}
-                    ,${sortear(0,60)},${sortear(0,60)}`;
-                }
-                function sortear(f, i){
-                    if (i > f) {
-                    numInicial = f;numFinal = i+1;
-                    } else {
-                        numInicial = i;numFinal = f+1;
-                    }
-                    numRandom = Math.floor((Math.random()*(numFinal-numInicial))+numInicial);
-                    return numRandom;
-                    //var aleatorio = document.getElementById("megaSena").innerHTML = Math.floor(Math.random() * 100);
-                }
-                function tabu(){
-                    resp1 = document.getElementById('tabResp').innerHTML = `Resultado: <br> ${tabuCalc()} `;
-                    
-                }
-                function tabuCalc(num1){
-                    var num1 = Number(document.getElementById("tabNum").value);
-                    var num = num1 *1;
-                    var num2 = num1 *2;
-                    var num3 = num1 *3;
-                    var num4 = num1 *4;
-                    var num5 = num1 *5;
-                    var num6 = num1 *6;
-                    var num7 = num1 *7;
-                    var num8 = num1 *8;
-                    var num9 = num1 *9;
-                    var num10 = num1 *10;
-                    const tabAr = [String(num1)+" * 1 = "+num, String(num1)+" * 2 = "+num2, 
-                    String(num1)+" * 3 = "+num3, String(num1)+" * 4 = "+num4, String(num1)+" * 5 = "+num5,
-                     String(num1)+" * 6 = "+num6, String(num1)+" * 7 = "+num7, String(num1)+" * 8 = "+num8, 
-                     String(num1)+" * 9 = "+num9, String(num1)+" * 10 = "+num10];
-                    let tabText = "";
-                    for (let i = 0; i < tabAr.length; i++) {
-                    tabText += tabAr[i] + "<br>";
-                    }
-                    return tabText;
-                }
-                
-            </script>
+            <script type="text/javascript" src="script.js"></script>
         </div>
     </div>
 </body>
