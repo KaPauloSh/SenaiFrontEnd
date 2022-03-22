@@ -41,6 +41,8 @@ function quest2Calc(q2valor1, q2valor2){
     var num1 = document.getElementById("q2valor1").value;
     var num2 = document.getElementById("q2valor2").value;
 
+    if(num1 > num2) [num1, num2] = [num2, num1];
+
     let text = "";
     let i = num1;
     while(i < num2){
@@ -56,7 +58,13 @@ function quest2Calc(q2valor1, q2valor2){
 function quest2(){
     var num1 = document.getElementById("q2valor1").value;
     var num2 = document.getElementById("q2valor2").value;
-    resp2 = document.getElementById('tabResp2').innerHTML = `Resultado: Os número entre ${num1} e ${num2} são(${quest2Calc()})`;
+    if(num1.length <= 4||num2.length <= 4){
+        resp2 = document.getElementById('tabResp2').innerHTML = `Resultado: Os número entre ${num1} e ${num2} são(${quest2Calc()})`;
+    }
+    else{
+        alert("use um número menor!");
+    }
+    
 }
 
 //questao 3

@@ -19,7 +19,7 @@
                 Questã 01:<span>Tabuada
                     <a href="detalhes.html" target="_blank">detalhar</a></span>
             </h1>
-            <input type="text" id="tabNum" style="display: inline" />
+            <input type="text" id="tabNum" style="display: inline" maxlength="10"/>
             <input type="button" onclick="tabu()" value="Calcular" />
             <p id="tabResp">Resultado: <br>N x 1 = NX<br>N x 2 = NX<br>...<br>N x 10 = NX<br></p>
         </div>
@@ -30,9 +30,9 @@
             </h1>
             <p id="tabResp2">Resultado: Os número entre A e Z são (x,x,x,x,x).</p>
             <label for="">Valor 01:</label>
-            <input type="text" id="q2valor1" />
+            <input type="text" id="q2valor1" maxlength="10"/>
             <label for="">Valor 02:</label>
-            <input type="text" id="q2valor2" />
+            <input type="text" id="q2valor2" maxlength="10"/>
             <input type="button" onclick="quest2()" value="Executar" />
         </div>
         <div class="questao">
@@ -43,7 +43,7 @@
             </h1>
             <p id="">Resultado: A lista de itens é [<span id="tabResp3">xxxx,xxxx,xxxx,xxxxx</span>]</p>
             <label for="">Item:</label>
-            <input type="text" id="quest3" />
+            <input type="text" id="quest3" maxlength="10"/>
             <input type="button" onclick="addList()" value="Add" />
             <input type="button" onclick="showList()" value="Show" />
             <input type="button" onclick="clearList()" value="Clear" />
@@ -67,7 +67,7 @@
                 mulheres [<span id="mulher5">xxxx,xxxx,xxxx</span>]
             </p>
             <label for="">Nome:</label>
-            <input type="text" id="name" />
+            <input type="text" id="name" maxlength="10"/>
             <label for="">Sexo:</label>
             <select name="sexo" id="genre">
                 <option value="M">Masculino</option>
