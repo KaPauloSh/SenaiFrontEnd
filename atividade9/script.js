@@ -137,3 +137,5 @@ function clear5(){
     document.getElementById("homem5").innerHTML = "";
     document.getElementById("mulher5").innerHTML = "";
 }
+
+//desafio
