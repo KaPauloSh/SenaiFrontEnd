@@ -139,3 +139,69 @@ function clear5(){
 }
 
 //desafio
+let janKen = "";
+let Po = "";
+function pedra(){
+    //mao("✊🏽");
+    desafioSorteio();
+    janKen = "pedra";
+    return pedra;
+}
+function papel(){
+    desafioSorteio();
+    //mao("🖐🏽");
+    janKen = "papel";
+    return papel;
+}
+function tesoura(){
+    desafioSorteio();
+    //mao("✌🏽");
+    janKen = "tesoura";
+    return tesoura;
+}
+
+function desafioSorteio(){
+    const random = (min, max) => Math.floor(Math.random() * (max - min) + min);
+    var jogada = random(1, 4);
+    //alert(random(1, 4));
+    switch (jogada){
+        case 1:
+            Po = "pedra"
+            mao("✊🏽");
+            if(janKen == "papel"){
+                document.getElementById("desafioResultado").innerHTML = "Vitória";
+            }else if(janKen == "tesoura"){
+                document.getElementById("desafioResultado").innerHTML = "Derrota";
+            }else{
+                document.getElementById("desafioResultado").innerHTML = "Empate";
+            }
+            break;
+        case 2:
+            Po = "papel"
+            mao("🖐🏽");
+            if(janKen == "tesoura"){
+                document.getElementById("desafioResultado").innerHTML = "Vitória";
+            }else if(janKen == "pedra"){
+                document.getElementById("desafioResultado").innerHTML = "Derrota";
+            }else{
+                document.getElementById("desafioResultado").innerHTML = "Empate";
+            }
+            break;
+        case 3:
+            Po = "tesoura"
+            mao("✌🏽");
+            if(janKen == "pedra"){
+                document.getElementById("desafioResultado").innerHTML = "Vitória";
+            }else if(janKen == "papel"){
+                document.getElementById("desafioResultado").innerHTML = "Derrota";
+            }else{
+                document.getElementById("desafioResultado").innerHTML = "Empate";
+            }
+            break;
+    }
+    return random;
+}
+
+function mao(tipoMao){
+    document.getElementById("desafio").innerHTML = tipoMao
+}
