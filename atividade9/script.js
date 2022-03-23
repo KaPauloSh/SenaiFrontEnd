@@ -45,8 +45,13 @@ function quest2(){
     var num1 = Number(document.getElementById("q2valor1").value);
     var num2 = Number(document.getElementById("q2valor2").value);
    
-    resp2 = document.getElementById('tabResp2').innerHTML = `Resultado: Os número entre ${num1} e ${num2} são(${quest2Calc()})`;
-
+    if(num1 == 0){
+        alert("por favor, preencha o primeiro campo!")
+    }else if(num2 == 0){
+        alert("por favor, preencha o segundo campo!")
+    }else{
+        resp2 = document.getElementById('tabResp2').innerHTML = `Resultado: Os número entre ${num1} e ${num2} são(${quest2Calc()})`;
+    }
 }
 
 //questao 3

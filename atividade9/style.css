@@ -39,6 +39,7 @@ input[type='text'],
 
     input[type='button'] {
         margin-top: 10px;
+        border-radius: 3px;
     }
 
     .mao {
@@ -56,5 +57,9 @@ input[type='text'],
         background-color: #e0f7faa1;
         padding: 1px 10px 10px 10px;
         word-wrap: break-word;
-        
+        border-radius: 15px;
+    }
+
+    .campo{
+        border-radius: 3px;
     }
