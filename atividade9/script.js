@@ -61,7 +61,8 @@ function addList(){
     }
 }
 function showList(){
-    document.getElementById("tabResp3").innerHTML = itensList
+    document.getElementById("tabResp3").innerHTML =
+        itensList.reduce((anterior, proximo) => `${anterior}, ${proximo}`)
 }
 function clearList(){
     itensList = [];
