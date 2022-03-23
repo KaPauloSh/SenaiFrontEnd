@@ -66,8 +66,13 @@ function addList(){
     }
 }
 function showList(){
-    document.getElementById("tabResp3").innerHTML =
+    if(itensList == 0){
+        alert("primeiro adicione algo a lista!")
+    }else{
+        document.getElementById("tabResp3").innerHTML =
         itensList.reduce((anterior, proximo) => `${anterior}, ${proximo}`)
+    }
+    
 }
 function clearList(){
     itensList = [];
