@@ -32,7 +32,7 @@ function quest2Calc(q2valor1, q2valor2){
     let text = "";
     let i = num1;
     while(i < num2){
-        text += i + ","; 
+        text += i + ", "; 
         i++    
     }
 
@@ -44,13 +44,9 @@ function quest2Calc(q2valor1, q2valor2){
 function quest2(){
     var num1 = Number(document.getElementById("q2valor1").value);
     var num2 = Number(document.getElementById("q2valor2").value);
-    if(num1.length <= 4||num2.length <= 4){
-        resp2 = document.getElementById('tabResp2').innerHTML = `Resultado: Os número entre ${num1} e ${num2} são(${quest2Calc()})`;
-    }
-    else{
-        alert("use um número menor!");
-    }
-    
+   
+    resp2 = document.getElementById('tabResp2').innerHTML = `Resultado: Os número entre ${num1} e ${num2} são(${quest2Calc()})`;
+
 }
 
 //questao 3
@@ -75,8 +71,7 @@ function clearList(){
 //questao 4
 function loteria(){
     document.getElementById("megaSena").innerHTML = 
-    `Resultado: ${random(0,60)},${random(0,60)},${random(0,60)},${random(0,60)}
-    ,${random(0,60)},${random(0,60)}`;
+    `Resultado: ${random(0,60)},${random(0,60)},${random(0,60)},${random(0,60)},${random(0,60)},${random(0,60)}`;
 }
 
 //questao 5
