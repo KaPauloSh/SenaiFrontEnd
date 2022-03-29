@@ -4,6 +4,15 @@ function calcular(){
     let total = tempo * velocidade;
     let gastoCombustivel = total / 12;
 
-    let resposta = document.getElementById("resposta").value = gastoCombustivel.toFixed(3);
-    return resposta;
+    if(tempo == 0){
+        alert("por favor, digite um número no primeiro campo!");
+        return;
+    }else if(velocidade == 0){
+        alert("por favor, digite um número número no segundo campo!");
+        return;
+    }
+    else{
+        let resposta = document.getElementById("resposta").value = gastoCombustivel.toFixed(3);
+        return resposta;
+    }
 }
