@@ -8,7 +8,7 @@ function calcular(){
         alert("por favor, digite um número no primeiro campo!");
         return;
     }else if(velocidade == 0){
-        alert("por favor, digite um número número no segundo campo!");
+        alert("por favor, digite um número no segundo campo!");
         return;
     }
     else{
