@@ -38,3 +38,6 @@ input{
 input[type="button"]:hover{
     color: 	#D3D3D3;
 }
+input[type="button"]:active{
+    background-color: #FF0000;
+}
