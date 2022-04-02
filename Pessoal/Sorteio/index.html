@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="utf-8"/>
+    <title>Sorteio</title>
+  </head>
+  <body>
+    <div id="container">
+      <fieldset>
+        <legend>Sorteio</legend>
+        <div id="campos">
+          <input id="nome" type="text" placeholder="Digite um nome para adicionar" maxlength="10"/>
+          <input type="button" onclick="adicionar()" id="enviar" value="enviar" />
+          <input type="button" onclick="limpar()" id="limpar" value="limpar" />
+          <input type="button" onclick="sortear()" id="sortear" value="sortear" />
+        </div>
+        <div id="resultado">
+          <br/>
+          <h>A lista de pessoas é: <span id="visual"></span></h>
+          <br/>
+          <h>O vencedor é: <span id="vencedor"></span></h>
+        </div>
+      </fieldset>
+    </div>
+  <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
