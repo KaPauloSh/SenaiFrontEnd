@@ -8,3 +8,13 @@ fieldset{
     margin-right: auto;
     border-radius: 15px;
 }
+legend{
+    text-align: center;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: #6C6C6C;
+}
+input{
+    border-radius: 6px;
+}

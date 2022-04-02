@@ -18,6 +18,10 @@ function sortear(){
   document.getElementById("vencedor").innerHTML = resultado;
 }
 function limpar(){
-  pessoas = [];
-  document.getElementById("visual").innerHTML = pessoas;
+  if(pessoas == 0){
+    alert("por favor, adicione algo a lista!")
+  }else{
+    pessoas = [];
+    document.getElementById("visual").innerHTML = pessoas;
+  }
 }
