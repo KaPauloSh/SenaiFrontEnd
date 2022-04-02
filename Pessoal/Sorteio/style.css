@@ -23,7 +23,7 @@ legend{
     border-width: 2px;
     border-color: #fff;
     user-select: none;
-    background-color: #dc143c;
+    background-color: #000;
 }
 input{
     border-radius: 6px;
@@ -32,12 +32,12 @@ body{
     background: linear-gradient(90deg,#696969, #DCDCDC);
 }
 input[type="button"]{
-    background-color: #dc143c;
+    background-color: #000;
     color: #fff;
 }
 input[type="button"]:hover{
     color: 	#D3D3D3;
 }
 input[type="button"]:active{
-    background-color: #FF0000;
+    background-color: #4F4F4F;
 }
