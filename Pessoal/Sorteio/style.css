@@ -23,10 +23,18 @@ legend{
     border-width: 2px;
     border-color: #fff;
     user-select: none;
+    background-color: #dc143c;
 }
 input{
     border-radius: 6px;
 }
 body{
     background: linear-gradient(90deg,#696969, #DCDCDC);
+}
+input{
+    background-color: #dc143c;
+    color: #fff;
+}
+input[type="button"]:hover{
+    color: 	#D3D3D3;
 }

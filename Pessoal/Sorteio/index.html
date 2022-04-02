@@ -12,8 +12,8 @@
       <fieldset>
         <legend>SORTEIO</legend>
         <div id="campos">
-          <input id="nome" type="text" placeholder="Digite um nome para adicionar" maxlength="20"/>
-          <input type="button" onclick="adicionar()" id="enviar" value="enviar" />
+          <input id="nome" type="text" placeholder="Digite um nome para adicionar" maxlength="20" autofocus/>
+          <input type="button" onclick="adicionar()" id="enviar" value="adicionar" />
           <input type="button" onclick="limpar()" id="limpar" value="limpar" />
           <input type="button" onclick="sortear()" id="sortear" value="sortear" />
         </div>
@@ -21,7 +21,7 @@
           <br/>
           <h>A lista do sorteio é: <span id="visual"></span></h>
           <br/>
-          <h>O vencedor é: <span id="vencedor"></span></h>
+          <h>O vencedor é: </h><span id="vencedor"></span>
         </div>
       </fieldset>
     </div>
