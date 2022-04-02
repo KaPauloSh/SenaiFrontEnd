@@ -2,19 +2,31 @@
     display: flex;
     flex-direction: row;
 }
+#resultado{
+    user-select: none;
+    word-wrap: break-word;
+}
 fieldset{
+    color: #fff;
+    background-color: #4F4F4F;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
+    border-color: #fff;
 }
 legend{
+    background-color: #4F4F4F;
     text-align: center;
     border-style: solid;
     border-radius: 6px;
     border-width: 2px;
-    border-color: #6C6C6C;
+    border-color: #fff;
+    user-select: none;
 }
 input{
     border-radius: 6px;
+}
+body{
+    background: linear-gradient(90deg,#696969, #DCDCDC);
 }
