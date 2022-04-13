@@ -19,41 +19,34 @@
                                 <h5>Doces e Ovos de Páscoa artesanais</h5>
                             </li>
                             <li><input type="text" placeholder="O que você procura?🔎" id="buscador"/></li>
-                            <li><img id="favorito" src="images/menuHorizontal/favorite.png"/></li>
-                            <li><img id="login" src="images/menuHorizontal/user.png"/></li>
-                            <li><h>Faça seu Login <br/>ou Cadastre-se</h></li>
-                            <li><img id="carrinho" src="images/menuHorizontal/car.png"/></li>
-                            <li><h>Carrinho <br/><span>0</span> itens</h></li>
+                            <li>
+                                <div id="favorito-btn" onclick="favoritoToggle()">
+                                    <img id="favorito" src="images/menuHorizontal/favorite.png"/>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="usuario-btn">
+                                    <img id="login" src="images/menuHorizontal/user.png"/>
+                                </div>
+                            </li>
+                            <li>
+                                <h>Faça seu Login <br/>ou Cadastre-se</h>
+                            </li>
+                            <li>
+                                <div id="carrinho-btn">
+                                    <img id="carrinho" src="images/menuHorizontal/car.png"/>
+                                </div>
+                            </li>
+                            <li>
+                                <h>Carrinho <br/><span>0</span> itens</h>
+                            </li>
                         </ul>
                     </nav>
                 </div>
             </header>
             <main>
                 <div id="container">
-                    <div>
-                        <ul id="menuV">
-                            <nav>
-                                <li>
-                                    <h2>CATEGORIA</h2>
-                                    <div>
-                                        <input type="radio"/>
-                                        <label for="ovosDePascoa">Ovos de Páscoa</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio"/>
-                                        <label for="trufas">Trufas</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio"/>
-                                        <label for="bombons">Bombons</label>
-                                    </div>
-                                </li>
-                                
-                            </nav>
-                        </ul>
-                    </div>
                     <div id="container2">
-
                         <div id="item">
                             <fieldset id="produto">
                                 <img src="images/produtos/ovos/cacauSortido.png"/>
@@ -141,5 +134,6 @@
                     </div>
                 </div>
             </main>
+            <script src="javascript/script.js"></script>
         </body>
     </html>

@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-family: "Fira Sans";
@@ -10,6 +10,16 @@ header{
 }
 
 main{
+    background-color: #A9A9A9;
+}
+
+#favorito-btn, #usuario-btn, #carrinho-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     background-color: #A9A9A9;
 }
 
@@ -38,10 +48,8 @@ main{
 }
 
 #favorito, #login, #carrinho{
-    width: 50px;
-    height: 50px;
-    border-radius: 225px;
-    background-color: #A9A9A9;
+    width: 30px;
+    height: 30px;
 }
 
 #buscador{
@@ -67,11 +75,6 @@ main{
 
 h5 {
     font-weight: normal;
-}
-
-#menuV{
-    margin-top: 30px;
-    list-style-type: none;
 }
 
 #container2{
@@ -123,6 +126,8 @@ h5 {
     margin-bottom: 10px;
     border-radius: 8px;
     padding: 7px;
+    outline: none;
+    border: 1px;
 }
 
 #produto h2{
