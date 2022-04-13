@@ -15,20 +15,21 @@ main{
 
 #menuH{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     list-style-type: none;
     padding: 0;
     color: #fff;
 }
 
-#menuH li{
-    display: inline-block;
+#menuH ul{
+    display:flex;
     padding: 10px;
 }
 
-#menuH li h{
-    display: inline-block;
-
+#menuH li{
+    padding: 10px;
 }
 
 #menuH li input{
@@ -51,10 +52,12 @@ main{
 #container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
 }
 
 .header {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
