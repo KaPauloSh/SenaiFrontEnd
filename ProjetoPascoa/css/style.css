@@ -1,13 +1,23 @@
 *{
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Fira Sans";
+}
+
+header{
+    margin: 0 auto;
+}
+
+main{
+    background-color: #A9A9A9;
 }
 
 #menuH{
+    display: flex;
+    align-items: center;
     list-style-type: none;
     padding: 0;
-    background-color: #1C1C1C;
     color: #fff;
 }
 
@@ -17,22 +27,20 @@
 }
 
 #menuH li h{
-    
     display: inline-block;
+
 }
 
+#menuH li input{
+    padding: 10px;
+    height: 40px;
+}
 
 #favorito, #login, #carrinho{
     width: 50px;
     height: 50px;
     border-radius: 225px;
     background-color: #A9A9A9;
-}
-
-#logo{
-    width: 250px;
-    height: 60px;
-    background-color: red;
 }
 
 #buscador{
@@ -42,4 +50,87 @@
 
 #container{
     display: flex;
+    flex-direction: row;
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #1C1C1C;
+}
+
+h5 {
+    font-weight: normal;
+}
+
+#menuV{
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+#container2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#container2 img{
+    margin-top: 10px;
+    max-width:150px;
+    max-height: 150px;
+    width: auto;
+}
+
+#item #produto{
+    margin: 40px;
+    text-align: center;
+    border-radius: 35px;
+    background-color: #fff;
+    border: none;
+}
+
+#quantidade{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#quantidade h{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#quantidade input{
+    outline: none;
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+
+#comprar{
+    height: 30px;
+    width: 110px;
+    background-color: #006400;
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+#produto h2{
+    margin: 10px;
+    font-size: 25px;
+    width: 240px;
+    height: 70px;
+}
+
+.preco{
+    font-weight: bold;
+    font-size: 25px;
+    color: 	#228B22;
 }

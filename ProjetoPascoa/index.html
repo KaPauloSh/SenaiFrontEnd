@@ -5,21 +5,141 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Dona Chiquinha</title>
             <link rel="stylesheet" href="css/style.css"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet">
         </head>
         <body>
-            <div>
-                <ul id="menuH">
-                    <li><h1>Dona Chiquinha</h5>Doces e Ovos de Páscoa artesanais<h></h></li>
-                    <li><input type="text" placeholder="O que você procura?🔎" id="buscador"/></li>
-                    <li><img id="favorito" src="images/favorite.png"/></li>
-                    <li><img id="login" src="images/user.png"/></li>
-                    <li><h>Faça seu Login <br/>ou Cadastre-se</h></li>
-                    <li><img id="carrinho" src="images/car.png"/></li>
-                    <li><h>Carrinho <br/><span>0</span> itens</h></li>
-                </ul>
-            </div>
-            <div id="container">
+            <header>
+                <div class="header">
+                    <nav>
+                        <ul id="menuH">
+                            <li id="logo">
+                                <h1>Dona Chiquinha</h1>
+                                <h5>Doces e Ovos de Páscoa artesanais</h5>
+                            </li>
+                            <li><input type="text" placeholder="O que você procura?🔎" id="buscador"/></li>
+                            <li><img id="favorito" src="images/menuHorizontal/favorite.png"/></li>
+                            <li><img id="login" src="images/menuHorizontal/user.png"/></li>
+                            <li><h>Faça seu Login <br/>ou Cadastre-se</h></li>
+                            <li><img id="carrinho" src="images/menuHorizontal/car.png"/></li>
+                            <li><h>Carrinho <br/><span>0</span> itens</h></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <div id="container">
+                    <div>
+                        <ul id="menuV">
+                            <nav>
+                                <li>
+                                    <h2>CATEGORIA</h2>
+                                    <div>
+                                        <input type="radio"/>
+                                        <label for="ovosDePascoa">Ovos de Páscoa</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio"/>
+                                        <label for="trufas">Trufas</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio"/>
+                                        <label for="bombons">Bombons</label>
+                                    </div>
+                                </li>
+                                
+                            </nav>
+                        </ul>
+                    </div>
+                    <div id="container2">
 
-            </div>
+                        <div id="item">
+                            <fieldset id="produto">
+                                <img src="images/produtos/ovos/cacauSortido.png"/>
+                                <h2>Ovo sortido 280g</h2>
+                                <h class="preco">R$ <span>49,90</span></h>
+                                    <fieldset id="quantidade">
+                                        <input type="button" value="-"/>
+                                        <h>1</h>
+                                        <input type="button" value="+"/>
+                                    </fieldset>
+                                <input type="button" value="COMPRAR" id="comprar"/>
+                            </fieldset>
+                        </div>
+
+                        <div id="item">
+                            <fieldset id="produto">
+                                <img src="images/produtos/ovos/ferrero.webp"/>
+                                <h2>Ovo ao leite<br/>com 6 bombons</h2>
+                                <h class="preco">R$ <span>99,99</span></h>
+                                    <fieldset id="quantidade">
+                                        <input type="button" value="-"/>
+                                        <h>1</h>
+                                        <input type="button" value="+"/>
+                                    </fieldset>
+                                <input type="button" value="COMPRAR" id="comprar"/>
+                            </fieldset>
+                        </div>
+
+                        <div id="item">
+                            <fieldset id="produto">
+                                <img src="images/produtos/ovos/kitKat.webp"/>
+                                <h2>Ovo kitKat 332g</h2>
+                                <h class="preco">R$ <span>49,99</span></h>
+                                    <fieldset id="quantidade">
+                                        <input type="button" value="-"/>
+                                        <h>1</h>
+                                        <input type="button" value="+"/>
+                                    </fieldset>
+                                <input type="button" value="COMPRAR" id="comprar"/>
+                            </fieldset>
+                        </div>
+
+                        <div id="item">
+                            <fieldset id="produto">
+                                <img src="images/produtos/ovos/lactaOreo.jpg"/>
+                                <h2>Ovo Oreo 257g</h2>
+                                <h class="preco">R$ <span>34,99</span></h>
+                                    <fieldset id="quantidade">
+                                        <input type="button" value="-"/>
+                                        <h>1</h>
+                                        <input type="button" value="+"/>
+                                    </fieldset>
+                                <input type="button" value="COMPRAR" id="comprar"/>
+                            </fieldset>
+                        </div>
+
+                        <div id="item">
+                            <fieldset id="produto">
+                                <img src="images/produtos/trufas/trufaMaracuja.png.opdownload"/>
+                                <h2>Trufa de Maracuja</h2>
+                                <h class="preco">R$ <span>2,50</span></h>
+                                    <fieldset id="quantidade">
+                                        <input type="button" value="-"/>
+                                        <h>1</h>
+                                        <input type="button" value="+"/>
+                                    </fieldset>
+                                <input type="button" value="COMPRAR" id="comprar"/>
+                            </fieldset>
+                        </div>
+
+                        <div id="item">
+                            <fieldset id="produto">
+                                <img src="images/produtos/trufas/trufaChocolate.png.opdownload"/>
+                                <h2>Trufa de Chocolate Belga</h2>
+                                <h class="preco">R$ <span>4,00</span></h>
+                                    <fieldset id="quantidade">
+                                        <input type="button" value="-"/>
+                                        <h>1</h>
+                                        <input type="button" value="+"/>
+                                    </fieldset>
+                                <input type="button" value="COMPRAR" id="comprar"/>
+                            </fieldset>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
         </body>
     </html>
