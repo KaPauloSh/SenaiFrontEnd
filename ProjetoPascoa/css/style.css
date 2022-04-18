@@ -84,12 +84,14 @@ h5 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
 }
 
 .item{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .item .produto{
