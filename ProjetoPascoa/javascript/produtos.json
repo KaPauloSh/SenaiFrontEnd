@@ -1,44 +1,44 @@
 [
     {
-        "nome":"Nome do produto 1",
+        "nome":"Ovo de Páscoa Prestígio",
         "descricao":"Esse é o...",
         "valor":100,
         "quantidade":0,
-        "img":"../images/produtos/trufas/trufaMaracuja.jpg"
+        "img":"images/produtos/ovos/ovoPrestigio.png"
     },
     {
-        "nome":"Nome do produto 2",
+        "nome":"Ovo de Páscoa Trufado",
         "descricao":"Esse é o...",
         "valor":100,
         "quantidade":0,
-        "img":"images/produtos/trufas/trufaChocolate.png.opdownload"
+        "img":"images/produtos/ovos/ovoTrufado.png"
     },
     {
-        "nome":"Nome do produto 3",
+        "nome":"Ovo de Páscoa Choco Power",
         "descricao":"Esse é o...",
-        "valor":100,
+        "valor":50,
         "quantidade":0,
-        "img":"images/produtos/trufas/trufaChocolate.png.opdownload"
+        "img":"images/produtos/ovos/ovoChoco.png"
     },
     {
         "nome":"Nome do produto 4",
         "descricao":"Esse é o...",
         "valor":100,
         "quantidade":0,
-        "img":"images/produtos/trufas/trufaChocolate.png.opdownload"
+        "img":"images/produtos/trufas/trufaMaracuja.png"
     },
     {
         "nome":"Nome do produto 5",
         "descricao":"Esse é o...",
         "valor":100,
         "quantidade":0,
-        "img":"images/produtos/trufas/trufaChocolate.png.opdownload"
+        "img":"images/produtos/trufas/trufaMaracuja.png"
     },
     {
         "nome":"Nome do produto 6",
         "descricao":"Esse é o...",
         "valor":100,
         "quantidade":0,
-        "img":"images/produtos/trufas/trufaChocolate.png.opdownload"
+        "img":"images/produtos/trufas/trufaMaracuja.png"
     }
 ]

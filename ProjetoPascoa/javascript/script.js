@@ -3,7 +3,7 @@ function buscarListaProduto(){
     let ajax = new XMLHttpRequest();
     ajax.open("GET", "javascript/produtos.json");
     ajax.send();
-    ajax.onload = function () {
+    ajax.onload = function (){
         lista = JSON.parse(this.response);
         replicar();
     }
@@ -16,7 +16,7 @@ function replicar(){
         let produto = document.querySelector(".produto").cloneNode(true);
         //item
         produto.querySelector(".tituloProduto").innerHTML = p.nome;
-        produto.querySelector("img").innerHTML = p.img;
+        produto.querySelector(".produtoImg").src = p.img;
         produto.querySelector(".descricaoProduto").innerHTML = p.descricao;
         produto.querySelector(".precoProduto").innerHTML = p.valor;
         produto.querySelector(".quantidadeNumero").innerHTML = p.quantidade;
@@ -34,6 +34,7 @@ function alterarQt(id, quantidade){
     let p = lista[id];
     p.quantidade += quantidade;
     if(p.quantidade < 0) p.quantidade = 0;
+    if(p.quantidade > 999) p.quantidade = 999;
     document.getElementsByClassName("quantidadeNumero")[id].innerHTML = p.quantidade;
     console.log(p.quantidade)
 }
