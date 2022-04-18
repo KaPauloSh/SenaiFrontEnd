@@ -19,7 +19,7 @@ function replicar(){
         produto.querySelector("img").innerHTML = p.img;
         produto.querySelector(".descricaoProduto").innerHTML = p.descricao;
         produto.querySelector(".precoProduto").innerHTML = p.valor;
-        produto.querySelector(".disponibilidadeProduto").innerHTML = p.quantidade;
+        produto.querySelector(".quantidadeNumero").innerHTML = p.quantidade;
 
         produto.querySelector(".minus").addEventListener("click", function(){ alterarQt(id, -1) });
         produto.querySelector(".plusle").addEventListener("click", function(){ alterarQt(id, 1) });
@@ -30,12 +30,12 @@ function replicar(){
     document.querySelector(".produto").remove();
 }
 
-function alterarQt(id, qt){
+function alterarQt(id, quantidade){
     let p = lista[id];
-    p.qt += qt;
-    if(p.qt < 0) p.qt = 0;
-    document.getElementsByClassName("quantidadeNumero")[id].innerHTML = p.qt;
-    console.log(p.qt)
+    p.quantidade += quantidade;
+    if(p.quantidade < 0) p.quantidade = 0;
+    document.getElementsByClassName("quantidadeNumero")[id].innerHTML = p.quantidade;
+    console.log(p.quantidade)
 }
 
 buscarListaProduto();
