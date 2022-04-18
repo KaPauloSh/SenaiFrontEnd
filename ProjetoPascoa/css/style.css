@@ -13,7 +13,7 @@ main{
     background-color: #A9A9A9;
 }
 
-#favorito-btn, #usuario-btn, #carrinho-btn {
+.favorito-btn, .usuario-btn, .carrinho-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,7 @@ main{
     background-color: #A9A9A9;
 }
 
-#menuH{
+.menuH{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -33,31 +33,31 @@ main{
     color: #fff;
 }
 
-#menuH ul{
+.menuH ul{
     display:flex;
     padding: 10px;
 }
 
-#menuH li{
+.menuH li{
     padding: 10px;
 }
 
-#menuH li input{
+.menuH li input{
     padding: 10px;
     height: 40px;
 }
 
-#favorito, #login, #carrinho{
+.favorito, .login, .carrinho{
     width: 30px;
     height: 30px;
 }
 
-#buscador{
+.buscador{
     height: 30px;
     width: 300px;
 }
 
-#container{
+.container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -77,20 +77,20 @@ h5 {
     font-weight: normal;
 }
 
-#container2{
+.container2{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-#container2 img{
+.container2 img{
     margin-top: 10px;
     max-width:150px;
-    max-height: 150px;
-    width: auto;
+    height: 150px;
+    
 }
 
-#item #produto{
+.item .produto{
     margin: 40px;
     text-align: center;
     border-radius: 35px;
@@ -98,27 +98,29 @@ h5 {
     border: none;
 }
 
-#quantidade{
+.quantidade{
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+    user-select: none;
 }
 
-#quantidade h{
+.quantidade h{
     margin-left: 50px;
     margin-right: 50px;
 }
 
-#quantidade input{
+.quantidade input{
     outline: none;
     background: none;
     border: none;
     text-decoration: none;
 }
 
-#comprar{
+/*botão de compra*/
+.comprar{
     height: 30px;
     width: 110px;
     background-color: #006400;
@@ -127,10 +129,21 @@ h5 {
     border-radius: 8px;
     padding: 7px;
     outline: none;
-    border: 1px;
+    border: 2px;
+    border-color: #2F4F4F;
+    border-style: outset;
 }
 
-#produto h2{
+.comprar:hover{
+    color: #00FA9A;
+}
+.comprar:active{
+    width: 106px;
+    height: 29px;
+    border-style: inset;
+}
+
+.produto h2{
     margin: 10px;
     font-size: 25px;
     width: 240px;
@@ -141,4 +154,14 @@ h5 {
     font-weight: bold;
     font-size: 25px;
     color: 	#228B22;
+}
+
+.minus, .plusle{
+    font-size: 20px;  
+}
+.minus:hover, .plusle:hover{
+    color: 	#228B22;
+}
+.minus:active, .plusle:active{
+    font-weight: bold;
 }

@@ -2,6 +2,7 @@
     <html lang="pt-br"/>
         <head>
             <meta charset="utf-8"/>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Dona Chiquinha</title>
             <link rel="stylesheet" href="css/style.css"/>
@@ -13,28 +14,28 @@
             <header>
                 <div class="header">
                     <nav>
-                        <ul id="menuH">
+                        <ul class="menuH">
                             <li id="logo">
                                 <h1>Dona Chiquinha</h1>
                                 <h5>Doces e Ovos de Páscoa artesanais</h5>
                             </li>
-                            <li><input type="text" placeholder="O que você procura?🔎" id="buscador"/></li>
+                            <li><input type="text" placeholder="O que você procura?🔎" class="buscador"/></li>
                             <li>
-                                <div id="favorito-btn" onclick="favoritoToggle()">
-                                    <img id="favorito" src="images/menuHorizontal/favorite.png"/>
+                                <div class="favorito-btn" onclick="favoritoToggle()">
+                                    <img class="favorito" src="images/menuHorizontal/favorite.png"/>
                                 </div>
                             </li>
                             <li>
-                                <div id="usuario-btn">
-                                    <img id="login" src="images/menuHorizontal/user.png"/>
+                                <div class="usuario-btn">
+                                    <img class="login" src="images/menuHorizontal/user.png"/>
                                 </div>
                             </li>
                             <li>
                                 <h>Faça seu Login <br/>ou Cadastre-se</h>
                             </li>
                             <li>
-                                <div id="carrinho-btn">
-                                    <img id="carrinho" src="images/menuHorizontal/car.png"/>
+                                <div class="carrinho-btn">
+                                    <img class="carrinho" src="images/menuHorizontal/car.png"/>
                                 </div>
                             </li>
                             <li>
@@ -45,89 +46,89 @@
                 </div>
             </header>
             <main>
-                <div id="container">
-                    <div id="container2">
-                        <div id="item">
-                            <fieldset id="produto">
+                <div class="container">
+                    <div class="container2">
+                        <div class="item">
+                            <fieldset class="produto">
                                 <img src="images/produtos/ovos/cacauSortido.png"/>
                                 <h2>Ovo sortido 280g</h2>
                                 <h class="preco">R$ <span>49,90</span></h>
-                                    <fieldset id="quantidade">
-                                        <input type="button" value="-"/>
-                                        <h>1</h>
-                                        <input type="button" value="+"/>
+                                    <fieldset class="quantidade">
+                                        <input type="button" value="-" class="minus"/>
+                                        <h><span>1</span></h>
+                                        <input type="button" value="+" class="plusle"/>
                                     </fieldset>
-                                <input type="button" value="COMPRAR" id="comprar"/>
+                                <input type="button" value="COMPRAR" class="comprar"/>
                             </fieldset>
                         </div>
 
-                        <div id="item">
-                            <fieldset id="produto">
+                        <div class="item">
+                            <fieldset class="produto">
                                 <img src="images/produtos/ovos/ferrero.webp"/>
                                 <h2>Ovo ao leite<br/>com 6 bombons</h2>
                                 <h class="preco">R$ <span>99,99</span></h>
-                                    <fieldset id="quantidade">
-                                        <input type="button" value="-"/>
-                                        <h>1</h>
-                                        <input type="button" value="+"/>
+                                    <fieldset class="quantidade">
+                                        <input type="button" value="-" class="minus"/>
+                                        <h><span>1</span></h>
+                                        <input type="button" value="+" class="plusle"/>
                                     </fieldset>
-                                <input type="button" value="COMPRAR" id="comprar"/>
+                                <input type="button" value="COMPRAR" class="comprar"/>
                             </fieldset>
                         </div>
 
-                        <div id="item">
-                            <fieldset id="produto">
+                        <div class="item">
+                            <fieldset class="produto">
                                 <img src="images/produtos/ovos/kitKat.webp"/>
                                 <h2>Ovo kitKat 332g</h2>
                                 <h class="preco">R$ <span>49,99</span></h>
-                                    <fieldset id="quantidade">
-                                        <input type="button" value="-"/>
-                                        <h>1</h>
-                                        <input type="button" value="+"/>
+                                    <fieldset class="quantidade">
+                                        <input type="button" value="-" class="minus"/>
+                                        <h><span>1</span></h>
+                                        <input type="button" value="+" class="plusle"/>
                                     </fieldset>
-                                <input type="button" value="COMPRAR" id="comprar"/>
+                                <input type="button" value="COMPRAR" class="comprar"/>
                             </fieldset>
                         </div>
 
-                        <div id="item">
-                            <fieldset id="produto">
+                        <div class="item">
+                            <fieldset class="produto">
                                 <img src="images/produtos/ovos/lactaOreo.jpg"/>
                                 <h2>Ovo Oreo 257g</h2>
                                 <h class="preco">R$ <span>34,99</span></h>
-                                    <fieldset id="quantidade">
-                                        <input type="button" value="-"/>
-                                        <h>1</h>
-                                        <input type="button" value="+"/>
+                                    <fieldset class="quantidade">
+                                        <input type="button" value="-" class="minus"/>
+                                        <h><span>1</span></h>
+                                        <input type="button" value="+" class="plusle"/>
                                     </fieldset>
-                                <input type="button" value="COMPRAR" id="comprar"/>
+                                <input type="button" value="COMPRAR" class="comprar"/>
                             </fieldset>
                         </div>
 
-                        <div id="item">
-                            <fieldset id="produto">
+                        <div class="item">
+                            <fieldset class="produto">
                                 <img src="images/produtos/trufas/trufaMaracuja.png.opdownload"/>
                                 <h2>Trufa de Maracuja</h2>
                                 <h class="preco">R$ <span>2,50</span></h>
-                                    <fieldset id="quantidade">
-                                        <input type="button" value="-"/>
-                                        <h>1</h>
-                                        <input type="button" value="+"/>
+                                    <fieldset class="quantidade">
+                                        <input type="button" value="-" class="minus"/>
+                                        <h><span>1</span></h>
+                                        <input type="button" value="+" class="plusle"/>
                                     </fieldset>
-                                <input type="button" value="COMPRAR" id="comprar"/>
+                                <input type="button" value="COMPRAR" class="comprar"/>
                             </fieldset>
                         </div>
 
-                        <div id="item">
-                            <fieldset id="produto">
+                        <div class="item">
+                            <fieldset class="produto">
                                 <img src="images/produtos/trufas/trufaChocolate.png.opdownload"/>
                                 <h2>Trufa de Chocolate Belga</h2>
                                 <h class="preco">R$ <span>4,00</span></h>
-                                    <fieldset id="quantidade">
-                                        <input type="button" value="-"/>
-                                        <h>1</h>
-                                        <input type="button" value="+"/>
+                                    <fieldset class="quantidade">
+                                        <input type="button" value="-" class="minus"/>
+                                        <h><span>1</span></h>
+                                        <input type="button" value="+" class="plusle"/>
                                     </fieldset>
-                                <input type="button" value="COMPRAR" id="comprar"/>
+                                <input type="button" value="COMPRAR" class="comprar"/>
                             </fieldset>
                         </div>
 
