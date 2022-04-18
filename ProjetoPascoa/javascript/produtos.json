@@ -1,0 +1,44 @@
+[
+    {
+        "nome":"Nome do produto 1",
+        "descricao":"Esse é o...",
+        "valor":100,
+        "quantidade":0,
+        "img":"../images/produtos/trufas/trufaMaracuja.jpg"
+    },
+    {
+        "nome":"Nome do produto 2",
+        "descricao":"Esse é o...",
+        "valor":100,
+        "quantidade":0,
+        "img":"images/produtos/trufas/trufaChocolate.png.opdownload"
+    },
+    {
+        "nome":"Nome do produto 3",
+        "descricao":"Esse é o...",
+        "valor":100,
+        "quantidade":0,
+        "img":"images/produtos/trufas/trufaChocolate.png.opdownload"
+    },
+    {
+        "nome":"Nome do produto 4",
+        "descricao":"Esse é o...",
+        "valor":100,
+        "quantidade":0,
+        "img":"images/produtos/trufas/trufaChocolate.png.opdownload"
+    },
+    {
+        "nome":"Nome do produto 5",
+        "descricao":"Esse é o...",
+        "valor":100,
+        "quantidade":0,
+        "img":"images/produtos/trufas/trufaChocolate.png.opdownload"
+    },
+    {
+        "nome":"Nome do produto 6",
+        "descricao":"Esse é o...",
+        "valor":100,
+        "quantidade":0,
+        "img":"images/produtos/trufas/trufaChocolate.png.opdownload"
+    }
+]

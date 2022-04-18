@@ -22,6 +22,10 @@ main{
     border-radius: 50%;
     background-color: #A9A9A9;
 }
+.favorito-btn:hover, .usuario-btn:hover, .carrinho-btn:hover{
+    cursor: pointer;
+    user-select: none;
+}
 
 .menuH{
     display: flex;
@@ -57,13 +61,6 @@ main{
     width: 300px;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
 .header {
     width: 100%;
     display: flex;
@@ -77,17 +74,22 @@ h5 {
     font-weight: normal;
 }
 
-.container2{
+.container img{
+    margin-top: 10px;
+    max-width:150px;
+    height: 150px;
+}
+
+.container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.container2 img{
-    margin-top: 10px;
-    max-width:150px;
-    height: 150px;
-    
+.item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .item .produto{
@@ -107,18 +109,19 @@ h5 {
     user-select: none;
 }
 
-.quantidade h{
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
 .quantidade input{
     outline: none;
     background: none;
     border: none;
     text-decoration: none;
 }
-
+.quantidade div{
+    display:inline;
+}
+.quantidadeNumero{
+    margin-left: 50px;
+    margin-right: 50px;
+}
 /*botão de compra*/
 .comprar{
     height: 30px;
@@ -135,19 +138,27 @@ h5 {
 }
 
 .comprar:hover{
-    color: #00FA9A;
+    cursor: pointer;
 }
 .comprar:active{
+    color: #00FA9A;
     width: 106px;
     height: 29px;
     border-style: inset;
 }
 
-.produto h2{
-    margin: 10px;
+.tituloProduto{
+    margin: 10px;    
     font-size: 25px;
     width: 240px;
-    height: 70px;
+    
+    word-wrap: break-word;
+}
+
+.descricaoProduto{
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .preco{
@@ -160,8 +171,17 @@ h5 {
     font-size: 20px;  
 }
 .minus:hover, .plusle:hover{
-    color: 	#228B22;
+    cursor: pointer;
 }
 .minus:active, .plusle:active{
+    color: 	#228B22;
     font-weight: bold;
+}
+.logar:hover, .cadastrar:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.disponibilidade{
+    font-size: 15px;
+    color: #696969;
 }
