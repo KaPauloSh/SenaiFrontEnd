@@ -1,43 +1,43 @@
 [
     {
-        "nome":"Ovo de Páscoa Prestígio",
+        "nome":"Ovo de Prestígio",
         "descricao":"Esse é o...",
-        "valor":100,
+        "valor":75.55,
         "quantidade":0,
         "img":"images/produtos/ovos/ovoPrestigio.png"
     },
     {
-        "nome":"Ovo de Páscoa Trufado",
+        "nome":"Ovo Trufado",
         "descricao":"Esse é o...",
-        "valor":100,
+        "valor":99.99,
         "quantidade":0,
         "img":"images/produtos/ovos/ovoTrufado.png"
     },
     {
-        "nome":"Ovo de Páscoa com Bombons",
+        "nome":"Ovo com Bombons",
         "descricao":"Esse é o...",
-        "valor":50,
+        "valor":80,
         "quantidade":0,
         "img":"images/produtos/ovos/ovoChoco.png"
     },
     {
-        "nome":"Nome do produto 4",
+        "nome":"Ovo Trufado de Morango",
         "descricao":"Esse é o...",
-        "valor":100,
+        "valor":99.99,
         "quantidade":0,
-        "img":"images/produtos/trufas/trufaMaracuja.png"
+        "img":"images/produtos/ovos/ovoTrufadoMorango.png"
     },
     {
-        "nome":"Nome do produto 5",
+        "nome":"Trufa de Chocolate",
         "descricao":"Esse é o...",
-        "valor":100,
+        "valor":2.55,
         "quantidade":0,
-        "img":"images/produtos/trufas/trufaMaracuja.png"
+        "img":"images/produtos/trufas/trufaChocolate.png"
     },
     {
         "nome":"Trufa de Maracujá",
         "descricao":"Esse é o...",
-        "valor":2,
+        "valor":2.55,
         "quantidade":0,
         "img":"images/produtos/trufas/trufaMaracuja.png"
     }
