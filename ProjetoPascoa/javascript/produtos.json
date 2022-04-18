@@ -14,7 +14,7 @@
         "img":"images/produtos/ovos/ovoTrufado.png"
     },
     {
-        "nome":"Ovo de Páscoa Choco Power",
+        "nome":"Ovo de Páscoa com Bombons",
         "descricao":"Esse é o...",
         "valor":50,
         "quantidade":0,
@@ -35,9 +35,9 @@
         "img":"images/produtos/trufas/trufaMaracuja.png"
     },
     {
-        "nome":"Nome do produto 6",
+        "nome":"Trufa de Maracujá",
         "descricao":"Esse é o...",
-        "valor":100,
+        "valor":2,
         "quantidade":0,
         "img":"images/produtos/trufas/trufaMaracuja.png"
     }
