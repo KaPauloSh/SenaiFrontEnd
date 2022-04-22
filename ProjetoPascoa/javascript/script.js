@@ -9,6 +9,13 @@ function buscarListaProduto(){
     }
 }
 
+function floatParaReal(valor) {
+    return new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    }).format(valor)
+}
+
 function replicar(){
     let i = 0;
     for (const p of lista){
@@ -18,7 +25,7 @@ function replicar(){
         produto.querySelector(".tituloProduto").innerHTML = p.nome.toUpperCase();
         produto.querySelector(".produtoImg").src = p.img;
         produto.querySelector(".descricaoProduto").innerHTML = p.descricao;
-        produto.querySelector(".precoProduto").innerHTML = p.valor;
+        produto.querySelector(".precoProduto").innerHTML = floatParaReal(p.valor);
         produto.querySelector(".quantidadeNumero").innerHTML = p.quantidade;
 
         produto.querySelector(".minus").addEventListener("click", function(){ alterarQt(id, -1) });
