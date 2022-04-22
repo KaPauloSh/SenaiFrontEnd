@@ -22,8 +22,11 @@ main{
     border-radius: 50%;
     background-color: #A9A9A9;
 }
-.favorito-btn:hover, .usuario-btn:hover, .carrinho-btn:hover{
+.favorito-btn:hover, .carrinho-btn:hover{
     cursor: pointer;
+    user-select: none;
+}
+.usuario-btn{
     user-select: none;
 }
 
@@ -68,9 +71,16 @@ main{
     align-items: center;
     flex-direction: row;
     background-color: #1C1C1C;
+    height: 100px;
 }
 
-h5 {
+nav h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+nav h5 {
+    margin-top: 0;
+    font-size: 14px;
     font-weight: normal;
 }
 
@@ -132,7 +142,7 @@ h5 {
     color: #fff;
     margin-bottom: 10px;
     border-radius: 8px;
-    padding: 7px;
+    padding: 5px;
     outline: none;
     border: 2px;
     border-color: #2F4F4F;
@@ -179,8 +189,22 @@ h5 {
     color: 	#228B22;
     font-weight: bold;
 }
-.logar:hover, .cadastrar:hover{
+.logar:hover{
     text-decoration: underline;
     cursor: pointer;
 
+}
+.modal-content{
+    color: #000;
+    word-wrap: break-word;
+}
+
+.modal .form-inline input{
+    float:left;
+}
+
+.modal .form-inline{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

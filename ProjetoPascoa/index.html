@@ -9,6 +9,11 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet">
+            
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            
         </head>
         <body>
             <header>
@@ -25,17 +30,20 @@
                                     <img class="favorito" src="images/menuHorizontal/favorite.png"/>
                                 </div>
                             </li>
+                            <!--
                             <li>
                                 <div class="usuario-btn">
                                     <img class="login" src="images/menuHorizontal/user.png"/>
                                 </div>
                             </li>
+                            
                             <li>
-                                <h>Faça seu <a class="logar">Login</a><br/>ou <a class="cadastrar">Cadastre-se</a></h>
+                                <h>Faça seu <h class="logar">Login</h><br/></h>
                             </li>
+                            -->
                             <li>
-                                <div class="carrinho-btn">
-                                    <img class="carrinho" src="images/menuHorizontal/car.png"/>
+                                <div class="carrinho-btn" data-toggle="modal" data-target="#myModal" onclick="mostrarPedidos()">
+                                    <img class="carrinho" src="images/menuHorizontal/car.png" />
                                 </div>
                             </li>
                             <li>
@@ -59,10 +67,36 @@
                                     <div class="quantidadeNumero">0</div>
                                     <input type="button" value="+" class="plusle"/>
                                 </fieldset>
-                            <input type="button" value="COMPRAR" class="comprar"/>
+                            <!--<input type="button" value="COMPRAR" class="comprar"/>-->
                         </fieldset>
                     </div>
                 </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                    
+                      <!-- Modal conteúdo-->
+                      <div class="modal-content #modalBg">
+                        <div class="modal-header">
+                          <button type="button" class="close" onclick="fechar()" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Informações do pedido</h4>
+                        </div>
+                        <div class="modal-body">
+                          
+                        </div>
+                        <div class="modal-footer form-inline d-flex">
+                            <div class="usuario-btn">
+                                <img class="login" src="images/menuHorizontal/user.png"/>
+                            </div>
+                            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="form-control"/>
+                            <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço" class="form-control"/>
+                            <button type="button" class="comprar" onclick="enviar()" disabled id="btEnviar">Enviar</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
             </main>
             <footer>
 
