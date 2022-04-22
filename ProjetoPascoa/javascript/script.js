@@ -43,7 +43,15 @@ function alterarQt(id, quantidade){
     if(p.quantidade < 0) p.quantidade = 0;
     if(p.quantidade > 999) p.quantidade = 999;
     document.getElementsByClassName("quantidadeNumero")[id].innerHTML = p.quantidade;
-    console.log(p.quantidade)
+    let prodQtd = 0;
+    let tudo = 0;
+    for(const produto of lista){
+        if(p.quantidade > 0){
+            prodQtd = produto.quantidade;
+            tudo += +prodQtd;
+            document.querySelector(".carroQtd").innerHTML = tudo;
+        }
+    }
 }
 
 buscarListaProduto();
