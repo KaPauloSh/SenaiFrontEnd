@@ -1,42 +1,42 @@
 [
     {
         "nome":"Ovo de Prestígio",
-        "descricao":"Esse é o...",
+        "descricao":"leite condensado, coco ralado, creme de leite, chocolate.",
         "valor":75.55,
         "quantidade":0,
         "img":"images/produtos/ovos/ovoPrestigio.png"
     },
     {
         "nome":"Ovo Trufado",
-        "descricao":"Esse é o...",
+        "descricao":"maracujá, creme de leite, leite condensado, chocolate.",
         "valor":99.99,
         "quantidade":0,
         "img":"images/produtos/ovos/ovoTrufado.png"
     },
     {
         "nome":"Ovo com Bombons",
-        "descricao":"Esse é o...",
+        "descricao":"bonbons, doce de leite, chocolate ao leite, chocolate branco.",
         "valor":80,
         "quantidade":0,
         "img":"images/produtos/ovos/ovoChoco.png"
     },
     {
         "nome":"Ovo Trufado de Morango",
-        "descricao":"Esse é o...",
+        "descricao":"morango, creme de leite, leite condensado, chocolate ao leite.",
         "valor":99.99,
         "quantidade":0,
         "img":"images/produtos/ovos/ovoTrufadoMorango.png"
     },
     {
         "nome":"Trufa de Chocolate",
-        "descricao":"Esse é o...",
+        "descricao":"chocolate meio amargo, creme de leite, achocolatado.",
         "valor":2.55,
         "quantidade":0,
         "img":"images/produtos/trufas/trufaChocolate.png"
     },
     {
         "nome":"Trufa de Maracujá",
-        "descricao":"Esse é o...",
+        "descricao":"chocolate meio amargo, chocolate branco, creme de leite, maracujá.<br/><br/><br/>",
         "valor":2.55,
         "quantidade":0,
         "img":"images/produtos/trufas/trufaMaracuja.png"
