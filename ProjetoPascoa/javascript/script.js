@@ -69,9 +69,9 @@ function mostrarPedidos(){
         document.querySelector("#btEnviar").disabled = "";
         document.querySelector(".modal-body").innerHTML = msgModal;
     }
-    
 }
 
+//enviando os itens pelo wpp
 function enviar(){
     let fone = '992015114';
     msgModal = msgModal.replaceAll("<p>", "").replaceAll("</p>", "\n");
@@ -87,3 +87,8 @@ function enviar(){
     window.open(link, '_blanck')
 }
 
+//limpando o modal
+$('#myModal').on('hidden.bs.modal', function () {
+    msgModal = msgModal * 0;
+    msgModal = "";
+});
