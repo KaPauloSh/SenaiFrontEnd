@@ -27,7 +27,7 @@ function replicar(){
         produto.querySelector(".descricaoProduto").innerHTML = p.descricao;
         produto.querySelector(".precoProduto").innerHTML = floatParaReal(p.valor);
         produto.querySelector(".quantidadeNumero").innerHTML = p.quantidade;
-
+        
         produto.querySelector(".minus").addEventListener("click", function(){ alterarQt(id, -1) });
         produto.querySelector(".plusle").addEventListener("click", function(){ alterarQt(id, 1) });
 
